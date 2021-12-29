@@ -31,16 +31,7 @@ namespace urun_islemleri
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (u.stokmiktarı <= u.sayac)
-            {
-                MessageBox.Show("Stokta ürün kalmadı");
-            }
-            else
-            {             
-                u.kasa = u.kasa + u.fiyat;
-                MessageBox.Show("ürün başarıyla satıldı");
-                u.sayac++;
-            }
+            u.urunsat();
         }
 
         private void button2_Click(object sender, EventArgs e)
